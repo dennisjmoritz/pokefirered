@@ -3,6 +3,7 @@
 PalletTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PalletTown_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, PalletTown_OnFrame
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 PalletTown_OnTransition::
@@ -40,43 +41,7 @@ PalletTown_OnFrame::
 
 @ Oak approaches player after exiting their house post Elite Four to check if they should receieve the National Dex
 PalletTown_EventScript_OakRatingScene::
-	lockall
-	textcolor NPC_TEXT_COLOR_MALE
-	setobjectxyperm LOCALID_PALLET_PROF_OAK, 14, 14
-	setobjectmovementtype LOCALID_PALLET_PROF_OAK, MOVEMENT_TYPE_FACE_LEFT
-	addobject LOCALID_PALLET_PROF_OAK
-	applymovement LOCALID_PALLET_PROF_OAK, PalletTown_Movement_OakWalkToPlayersDoor
-	waitmovement 0
-	goto_if_unset FLAG_WORLD_MAP_ONE_ISLAND, PalletTown_EventScript_NotBeenToOneIslandYet
-	msgbox PalletTown_Text_OakLetMeSeePokedex
-	setvar VAR_0x8004, 0
-	specialvar VAR_RESULT, GetPokedexCount
-	copyvar VAR_0x8008, VAR_0x8005
-	copyvar VAR_0x8009, VAR_0x8006
-	buffernumberstring STR_VAR_1, VAR_0x8008
-	buffernumberstring STR_VAR_2, VAR_0x8009
-	goto_if_lt VAR_0x8009, 60, PalletTown_EventScript_NotEnoughMonsForNationalDex
-	msgbox PalletTown_Text_CaughtXImpressiveFollowMe
-	closemessage
-	playbgm MUS_FOLLOW_ME, 0
-	applymovement LOCALID_PLAYER, PalletTown_Movement_PlayerWalkToLabFromHouse
-	applymovement LOCALID_PALLET_PROF_OAK, PalletTown_Movement_OakWalkToLabFromHouse
-	waitmovement 0
-	opendoor 16, 13
-	waitdooranim
-	applymovement LOCALID_PALLET_PROF_OAK, PalletTown_Movement_OakEnterLab
-	applymovement LOCALID_PLAYER, PalletTown_Movement_PlayerEnterLab
-	waitmovement 0
-	closedoor 16, 13
-	waitdooranim
-	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 7
-	setvar VAR_MAP_SCENE_PALLET_TOWN_OAK, 3
-	setflag FLAG_HIDE_OAK_IN_PALLET_TOWN
-	warp MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB, 6, 12
-	waitstate
-	releaseall
 	end
-
 PalletTown_EventScript_EndOakRatingScene::
 	closemessage
 	applymovement LOCALID_PALLET_PROF_OAK, PalletTown_Movement_OakExit
@@ -179,46 +144,7 @@ PalletTown_EventScript_OakTriggerRight::
 	end
 
 PalletTown_EventScript_OakTrigger::
-	famechecker FAMECHECKER_OAK, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	textcolor NPC_TEXT_COLOR_MALE
-	delay 30
-	playbgm MUS_OAK, 0
-	message PalletTown_Text_OakDontGoOut
-	waitmessage
-	delay 85
-	closemessage
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-	waitmovement 0
-	playse SE_PIN
-	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
-	waitmovement 0
-	delay 30
-	addobject LOCALID_PALLET_PROF_OAK
-	call_if_eq VAR_TEMP_1, 0, PalletTown_EventScript_OakEnterLeft
-	call_if_eq VAR_TEMP_1, 1, PalletTown_EventScript_OakEnterRight
-	delay 30
-	msgbox PalletTown_Text_OakGrassUnsafeNeedMon
-	closemessage
-	delay 30
-	call_if_eq VAR_TEMP_1, 0, PalletTown_EventScript_OakLeadPlayerToLabLeft
-	call_if_eq VAR_TEMP_1, 1, PalletTown_EventScript_OakLeadPlayerToLabRight
-	opendoor 16, 13
-	waitdooranim
-	applymovement LOCALID_PALLET_PROF_OAK, PalletTown_Movement_OakEnterLab
-	applymovement LOCALID_PLAYER, PalletTown_Movement_PlayerEnterLab
-	waitmovement 0
-	closedoor 16, 13
-	waitdooranim
-	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 1
-	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
-	setvar VAR_MAP_SCENE_PALLET_TOWN_OAK, 1
-	setflag FLAG_HIDE_OAK_IN_PALLET_TOWN
-	setflag FLAG_DONT_TRANSITION_MUSIC
-	warp MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB, 6, 12
-	waitstate
-	releaseall
 	end
-
 PalletTown_EventScript_OakEnterLeft::
 	applymovement LOCALID_PALLET_PROF_OAK, PalletTown_Movement_OakEnterLeft
 	waitmovement 0
@@ -446,4 +372,8 @@ PalletTown_EventScript_SignLadyStartShowSign::
 	waitmovement 0
 	call PalletTown_EventScript_SignLadyShowSign
 	release
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_PALLET
 	end

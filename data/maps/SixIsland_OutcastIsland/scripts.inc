@@ -1,7 +1,11 @@
 SixIsland_OutcastIsland_MapScripts::
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 SixIsland_OutcastIsland_EventScript_Rocket::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_46, SixIsland_OutcastIsland_Text_RocketIntro, SixIsland_OutcastIsland_Text_RocketDefeat
-	msgbox SixIsland_OutcastIsland_Text_RocketPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_SIXISLAND_OUTCAST
 	end

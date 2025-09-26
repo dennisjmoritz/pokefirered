@@ -1,5 +1,6 @@
 CeruleanCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, CeruleanCity_OnTransition
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 CeruleanCity_OnTransition::
@@ -34,49 +35,16 @@ CeruleanCity_EventScript_RivalTriggerRight::
 	end
 
 CeruleanCity_EventScript_Rival::
-	textcolor NPC_TEXT_COLOR_MALE
-	setvar VAR_MAP_SCENE_ROUTE22, 2
-	playbgm MUS_ENCOUNTER_RIVAL, 0
-	addobject LOCALID_CERULEAN_RIVAL
-	applymovement LOCALID_CERULEAN_RIVAL, CeruleanCity_Movement_RivalEnter
-	waitmovement 0
-	msgbox CeruleanCity_Text_RivalIntro
-	setvar VAR_LAST_TALKED, LOCALID_CERULEAN_RIVAL
-	call_if_eq VAR_STARTER_MON, 2, CeruleanCity_EventScript_RivalSquirtle
-	call_if_eq VAR_STARTER_MON, 1, CeruleanCity_EventScript_RivalBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, CeruleanCity_EventScript_RivalCharmander
-	famechecker FAMECHECKER_BILL, 0
-	msgbox CeruleanCity_Text_RivalPostBattle
-	closemessage
-	playbgm MUS_RIVAL_EXIT, 0
-	call_if_eq VAR_TEMP_1, 0, CeruleanCity_EventScript_RivalStartExit
-	call_if_eq VAR_TEMP_1, 1, CeruleanCity_EventScript_RivalStartExit
-	call_if_eq VAR_TEMP_1, 2, CeruleanCity_EventScript_RivalStartExitRight
-	msgbox CeruleanCity_Text_OhRightLittlePresentAsFavor
-	setvar VAR_MAP_SCENE_CERULEAN_CITY_RIVAL, 1
-	setflag FLAG_GOT_FAME_CHECKER
-	giveitem ITEM_FAME_CHECKER
-	msgbox CeruleanCity_Text_ExplainFameCheckerSmellYa
-	closemessage
-	applymovement LOCALID_CERULEAN_RIVAL, CeruleanCity_Movement_RivalExit
-	waitmovement 0
-	fadedefaultbgm
-	removeobject LOCALID_CERULEAN_RIVAL
-	releaseall
 	end
-
 CeruleanCity_EventScript_RivalSquirtle::
 	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_SQUIRTLE, CeruleanCity_Text_RivalDefeat
-	return
-
+	end
 CeruleanCity_EventScript_RivalBulbasaur::
 	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_BULBASAUR, CeruleanCity_Text_RivalDefeat
-	return
-
+	end
 CeruleanCity_EventScript_RivalCharmander::
 	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_CHARMANDER, CeruleanCity_Text_RivalDefeat
-	return
-
+	end
 CeruleanCity_EventScript_RivalStartExit::
 	applymovement LOCALID_PLAYER, CeruleanCity_Movement_PlayerWatchRivalExit
 	applymovement LOCALID_CERULEAN_RIVAL, CeruleanCity_Movement_RivalStartExit
@@ -162,32 +130,10 @@ CeruleanCity_Movement_RivalExit::
 	step_end
 
 CeruleanCity_EventScript_Grunt::
-	lock
-	faceplayer
-	goto_if_defeated TRAINER_TEAM_ROCKET_GRUNT_5, CeruleanCity_EventScript_GruntDefeated
-	message CeruleanCity_Text_GruntIntro
-	waitmessage
-	playbgm MUS_ENCOUNTER_ROCKET, 0
-	waitbuttonpress
 	trainerbattle_no_intro TRAINER_TEAM_ROCKET_GRUNT_5, CeruleanCity_Text_GruntDefeat
-	setvar VAR_MAP_SCENE_CERULEAN_CITY_ROCKET, 1
-	goto CeruleanCity_EventScript_GruntDefeated
 	end
-
 CeruleanCity_EventScript_GruntDefeated::
-	msgbox CeruleanCity_Text_OkayIllReturnStolenTM
-	checkitemspace ITEM_TM28
-	goto_if_eq VAR_RESULT, FALSE, CeruleanCity_EventScript_NoRoomForTM28
-	giveitem_msg CeruleanCity_Text_RecoveredTM28FromGrunt, ITEM_TM28
-	msgbox CeruleanCity_Text_BetterGetMovingBye
-	closemessage
-	fadescreen FADE_TO_BLACK
-	removeobject LOCALID_CERULEAN_GRUNT
-	fadescreen FADE_FROM_BLACK
-	setflag FLAG_GOT_TM28_FROM_ROCKET
-	release
 	end
-
 CeruleanCity_EventScript_NoRoomForTM28::
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CeruleanCity_Text_MakeRoomForThisCantRun
@@ -215,14 +161,8 @@ CeruleanCity_EventScript_GruntTriggerBottom::
 	end
 
 CeruleanCity_EventScript_GruntTrigger::
-	textcolor NPC_TEXT_COLOR_MALE
-	msgbox CeruleanCity_Text_GruntIntro
-	setvar VAR_LAST_TALKED, LOCALID_CERULEAN_GRUNT
 	trainerbattle_no_intro TRAINER_TEAM_ROCKET_GRUNT_5, CeruleanCity_Text_GruntDefeat
-	setvar VAR_MAP_SCENE_CERULEAN_CITY_ROCKET, 1
-	goto CeruleanCity_EventScript_GruntDefeated
 	end
-
 CeruleanCity_EventScript_Policeman::
 	lock
 	faceplayer
@@ -355,4 +295,8 @@ CeruleanCity_EventScript_GymSign::
 	famechecker FAMECHECKER_MISTY, 0
 	msgbox CeruleanCity_Text_GymSign
 	releaseall
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_CERULEAN
 	end

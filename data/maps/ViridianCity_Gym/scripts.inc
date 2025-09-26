@@ -2,27 +2,10 @@ ViridianCity_Gym_MapScripts::
 	.byte 0
 
 ViridianCity_Gym_EventScript_Giovanni::
-	famechecker FAMECHECKER_GIOVANNI, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	trainerbattle_single TRAINER_LEADER_GIOVANNI, ViridianCity_Gym_Text_GiovanniIntro, ViridianCity_Gym_Text_GiovanniDefeat, ViridianCity_Gym_EventScript_DefeatedGiovanni, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM26_FROM_GIOVANNI, ViridianCity_Gym_EventScript_GiveTM26
-	msgbox ViridianCity_Gym_Text_GiovanniPostBattle
-	closemessage
-	fadescreen FADE_TO_BLACK
-	removeobject LOCALID_VIRIDIAN_GIOVANNI
-	fadescreen FADE_FROM_BLACK
-	release
 	end
-
 ViridianCity_Gym_EventScript_DefeatedGiovanni::
-	famechecker FAMECHECKER_GIOVANNI, 3
-	setflag FLAG_HIDE_MISC_KANTO_ROCKETS
-	setflag FLAG_DEFEATED_LEADER_GIOVANNI
-	setflag FLAG_BADGE08_GET
-	setvar VAR_MAP_SCENE_ROUTE22, 3
-	set_gym_trainers 8
-	goto ViridianCity_Gym_EventScript_GiveTM26
 	end
-
 ViridianCity_Gym_EventScript_GiveTM26::
 	msgbox ViridianCity_Gym_Text_ExplainEarthBadgeTakeThis
 	checkitemspace ITEM_TM26

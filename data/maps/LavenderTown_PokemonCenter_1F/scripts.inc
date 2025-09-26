@@ -1,6 +1,7 @@
 LavenderTown_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LavenderTown_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Dex
 	.byte 0
 
 LavenderTown_PokemonCenter_1F_OnTransition::
@@ -24,4 +25,9 @@ LavenderTown_PokemonCenter_1F_EventScript_Lass::
 
 LavenderTown_PokemonCenter_1F_EventScript_Youngster::
 	msgbox LavenderTown_PokemonCenter_1F_Text_PeoplePayForCuboneSkulls, MSGBOX_NPC
+	end
+
+OnTransition_Dex::
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
 	end

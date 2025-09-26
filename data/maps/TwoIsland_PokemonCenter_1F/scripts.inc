@@ -1,6 +1,7 @@
 TwoIsland_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, TwoIsland_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Dex
 	.byte 0
 
 TwoIsland_PokemonCenter_1F_OnTransition::
@@ -20,4 +21,9 @@ TwoIsland_PokemonCenter_1F_EventScript_GBAKid::
 
 TwoIsland_PokemonCenter_1F_EventScript_BugCatcher::
 	msgbox TwoIsland_PokemonCenter_1F_Text_OldLadyLivesOutOnCape, MSGBOX_NPC
+	end
+
+OnTransition_Dex::
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
 	end

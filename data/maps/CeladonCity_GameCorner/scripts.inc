@@ -411,9 +411,7 @@ CeladonCity_GameCorner_EventScript_OpenRocketHideout::
 
 CeladonCity_GameCorner_EventScript_RocketGrunt::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_7, CeladonCity_GameCorner_Text_GruntIntro, CeladonCity_GameCorner_Text_GruntDefeat, CeladonCity_GameCorner_Text_DefeatedGrunt
-	msgbox CeladonCity_GameCorner_Text_GruntPostBattle, MSGBOX_AUTOCLOSE
 	end
-
 CeladonCity_GameCorner_Text_DefeatedGrunt::
 	msgbox CeladonCity_GameCorner_Text_GruntPostBattle
 	closemessage

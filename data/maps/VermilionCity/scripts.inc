@@ -1,6 +1,7 @@
 VermilionCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, VermilionCity_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, VermilionCity_OnFrame
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 VermilionCity_OnFrame::
@@ -26,9 +27,7 @@ VermilionCity_OnTransition::
 	end
 
 VermilionCity_EventScript_HideOaksAide::
-	setflag FLAG_HIDE_VERMILION_CITY_OAKS_AIDE
-	return
-
+	end
 VermilionCity_EventScript_Woman::
 	msgbox VermilionCity_Text_GrimerMultipliesInSludge, MSGBOX_NPC
 	end
@@ -263,4 +262,8 @@ VermilionCity_EventScript_GymSign::
 
 VermilionCity_EventScript_HarborSign::
 	msgbox VermilionCity_Text_VermilionHarbor, MSGBOX_SIGN
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_VERMILION
 	end

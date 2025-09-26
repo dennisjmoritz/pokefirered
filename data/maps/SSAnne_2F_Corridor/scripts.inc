@@ -69,16 +69,13 @@ SSAnne_2F_Corridor_EventScript_RivalApproachRight::
 
 SSAnne_2F_Corridor_EventScript_RivalSquirtle::
 	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_SQUIRTLE, SSAnne_2F_Corridor_Text_RivalDefeat
-	return
-
+	end
 SSAnne_2F_Corridor_EventScript_RivalBulbasaur::
 	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_BULBASAUR, SSAnne_2F_Corridor_Text_RivalDefeat
-	return
-
+	end
 SSAnne_2F_Corridor_EventScript_RivalCharmander::
 	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_CHARMANDER, SSAnne_2F_Corridor_Text_RivalDefeat
-	return
-
+	end
 SSAnne_2F_Corridor_EventScript_RivalExitLeft::
 	applymovement LOCALID_SS_ANNE_RIVAL, SSAnne_2F_Corridor_Movement_RivalExitLeft
 	waitmovement 0

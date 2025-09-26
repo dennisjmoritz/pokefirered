@@ -3,6 +3,7 @@
 Route10_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route10_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Dex
 	.byte 0
 
 Route10_PokemonCenter_1F_OnTransition::
@@ -59,3 +60,8 @@ Route10_PokemonCenter_1F_EventScript_GetAideRequestInfo::
 	buffernumberstring STR_VAR_1, REQUIRED_OWNED_MONS
 	bufferitemname STR_VAR_2, ITEM_EVERSTONE
 	return
+
+OnTransition_Dex::
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	end

@@ -30,34 +30,7 @@ SilphCo_7F_EventScript_RivalTriggerBottom::
 	end
 
 SilphCo_7F_EventScript_RivalScene::
-	textcolor NPC_TEXT_COLOR_MALE
-	playbgm MUS_ENCOUNTER_RIVAL, 0
-	applymovement LOCALID_SILPH_CO_RIVAL, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-	applymovement LOCALID_SILPH_CO_RIVAL, Common_Movement_Delay48
-	waitmovement 0
-	msgbox SilphCo_7F_Text_RivalWhatKeptYou
-	call_if_eq VAR_TEMP_1, 0, SilphCo_7F_EventScript_RivalApproachTop
-	call_if_eq VAR_TEMP_1, 1, SilphCo_7F_EventScript_RivalApproachBottom
-	msgbox SilphCo_7F_Text_RivalIntro
-	setvar VAR_LAST_TALKED, LOCALID_SILPH_CO_RIVAL
-	call_if_eq VAR_STARTER_MON, 2, SilphCo_7F_EventScript_RivalSquirtle
-	call_if_eq VAR_STARTER_MON, 1, SilphCo_7F_EventScript_RivalBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, SilphCo_7F_EventScript_RivalCharmander
-	msgbox SilphCo_7F_Text_RivalPostBattle
-	closemessage
-	playbgm MUS_RIVAL_EXIT, 0
-	call_if_eq VAR_TEMP_1, 0, SilphCo_7F_EventScript_RivalExitTop
-	call_if_eq VAR_TEMP_1, 1, SilphCo_7F_EventScript_RivalExitBottom
-	playse SE_WARP_IN
-	fadedefaultbgm
-	removeobject LOCALID_SILPH_CO_RIVAL
-	waitse
-	setvar VAR_MAP_SCENE_SILPH_CO_7F, 1
-	releaseall
 	end
-
 SilphCo_7F_EventScript_RivalApproachTop::
 	closemessage
 	applymovement LOCALID_SILPH_CO_RIVAL, SilphCo_7F_Movement_RivalApproachTop
@@ -69,16 +42,13 @@ SilphCo_7F_EventScript_RivalApproachBottom::
 
 SilphCo_7F_EventScript_RivalSquirtle::
 	trainerbattle_no_intro TRAINER_RIVAL_SILPH_SQUIRTLE, SilphCo_7F_Text_RivalDefeat
-	return
-
+	end
 SilphCo_7F_EventScript_RivalBulbasaur::
 	trainerbattle_no_intro TRAINER_RIVAL_SILPH_BULBASAUR, SilphCo_7F_Text_RivalDefeat
-	return
-
+	end
 SilphCo_7F_EventScript_RivalCharmander::
 	trainerbattle_no_intro TRAINER_RIVAL_SILPH_CHARMANDER, SilphCo_7F_Text_RivalDefeat
-	return
-
+	end
 SilphCo_7F_EventScript_RivalExitTop::
 	applymovement LOCALID_SILPH_CO_RIVAL, SilphCo_7F_Movement_RivalExitTop
 	waitmovement 0
@@ -219,15 +189,10 @@ SilphCo_7F_EventScript_Joshua::
 
 SilphCo_7F_EventScript_Grunt1::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_33, SilphCo_7F_Text_Grunt1Intro, SilphCo_7F_Text_Grunt1Defeat
-	msgbox SilphCo_7F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
 	end
-
 SilphCo_7F_EventScript_Grunt2::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_34, SilphCo_7F_Text_Grunt2Intro, SilphCo_7F_Text_Grunt2Defeat
-	msgbox SilphCo_7F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	end
-
 SilphCo_7F_EventScript_Grunt3::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_35, SilphCo_7F_Text_Grunt3Intro, SilphCo_7F_Text_Grunt3Defeat
-	msgbox SilphCo_7F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end

@@ -2,24 +2,10 @@ PokemonTower_7F_MapScripts::
 	.byte 0
 
 PokemonTower_7F_EventScript_MrFuji::
-	lock
-	faceplayer
-	famechecker FAMECHECKER_MRFUJI, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	setflag FLAG_HIDE_TOWER_FUJI
-	clearflag FLAG_HIDE_POKEHOUSE_FUJI
-	setflag FLAG_RESCUED_MR_FUJI
-	msgbox PokemonTower_7F_Text_MrFujiThankYouFollowMe
-	closemessage
-	warp MAP_LAVENDER_TOWN_VOLUNTEER_POKEMON_HOUSE, 4, 7
-	waitstate
-	release
 	end
-
 PokemonTower_7F_EventScript_Grunt1::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_19, PokemonTower_7F_Text_Grunt1Intro, PokemonTower_7F_Text_Grunt1Defeat, PokemonTower_7F_EventScript_DefeatedGrunt1
-	msgbox PokemonTower_7F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
 	end
-
 PokemonTower_7F_EventScript_DefeatedGrunt1::
 	msgbox PokemonTower_7F_Text_Grunt1PostBattle
 	closemessage
@@ -101,9 +87,7 @@ PokemonTower_7F_Movement_Grunt1ExitLeft::
 
 PokemonTower_7F_EventScript_Grunt2::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_20, PokemonTower_7F_Text_Grunt2Intro, PokemonTower_7F_Text_Grunt2Defeat, PokemonTower_7F_EventScript_DefeatedGrunt2
-	msgbox PokemonTower_7F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	end
-
 PokemonTower_7F_EventScript_DefeatedGrunt2::
 	famechecker FAMECHECKER_MRFUJI, 1
 	msgbox PokemonTower_7F_Text_Grunt2PostBattle
@@ -165,9 +149,7 @@ PokemonTower_7F_Movement_Grunt2ExitRight::
 
 PokemonTower_7F_EventScript_Grunt3::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_21, PokemonTower_7F_Text_Grunt3Intro, PokemonTower_7F_Text_Grunt3Defeat, PokemonTower_7F_EventScript_DefeatedGrunt3
-	msgbox PokemonTower_7F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
-
 PokemonTower_7F_EventScript_DefeatedGrunt3::
 	msgbox PokemonTower_7F_Text_Grunt3PostBattle
 	closemessage

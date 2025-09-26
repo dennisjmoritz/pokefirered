@@ -92,20 +92,7 @@ Route25_SeaCottage_EventScript_BillGoToSSAnne::
 	end
 
 Route25_SeaCottage_EventScript_BillGiveSSTicket::
-	famechecker FAMECHECKER_BILL, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, Route25_SeaCottage_EventScript_BillThanksMale
-	call_if_eq VAR_RESULT, FEMALE, Route25_SeaCottage_EventScript_BillThanksFemale
-	checkitemspace ITEM_SS_TICKET
-	goto_if_eq VAR_RESULT, FALSE, Route25_SeaCottage_EventScript_NoRoomForSSTicket
-	giveitem_msg Route25_SeaCottage_Text_ReceivedSSTicketFromBill, ITEM_SS_TICKET, 1, MUS_OBTAIN_KEY_ITEM
-	setflag FLAG_GOT_SS_TICKET_DUP
-	setflag FLAG_HIDE_NUGGET_BRIDGE_ROCKET
-	setflag FLAG_GOT_SS_TICKET
-	setflag FLAG_SYS_NOT_SOMEONES_PC
-	goto Route25_SeaCottage_EventScript_BillGoToSSAnne
 	end
-
 Route25_SeaCottage_EventScript_BillThanksMale::
 	msgbox Route25_SeaCottage_Text_ThanksBudTakeThis
 	return
@@ -150,58 +137,7 @@ Route25_SeaCottage_EventScript_Computer::
 	end
 
 Route25_SeaCottage_EventScript_RunCellSeparator::
-	fadeoutbgm 0
-	msgbox Route25_SeaCottage_Text_InitiatedTeleportersCellSeparator
-	closemessage
-	clearflag BILL_IN_TELEPORTER
-	setflag FLAG_HELPED_BILL_IN_SEA_COTTAGE
-	special SpawnCameraObject
-	applymovement LOCALID_CAMERA, Route25_SeaCottage_Movement_CameraPanToTeleporters
-	waitmovement 0
-	delay 35
-	playse SE_PIN
-	waitse
-	setvar VAR_0x8004, 0
-	special AnimateTeleporterHousing
-	delay 10
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	setvar VAR_0x8004, 1
-	special AnimateTeleporterHousing
-	playse SE_WARP_IN
-	special AnimateTeleporterCable
-	waitse
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
-	opendoor 3, 3
-	waitdooranim
-	fadeinbgm 0
-	addobject LOCALID_BILL_HUMAN
-	clearflag FLAG_HIDE_BILL_HUMAN_SEA_COTTAGE
-	delay 50
-	playfanfare MUS_LEVEL_UP
-	applymovement LOCALID_BILL_HUMAN, Route25_SeaCottage_Movement_BillExitTeleporter
-	waitmovement 0
-	waitfanfare
-	applymovement LOCALID_CAMERA, Route25_SeaCottage_Movement_CameraPanBackFromTeleporters
-	waitmovement 0
-	playse SE_CONTEST_CURTAIN_FALL
-	closedoor 3, 3
-	waitdooranim
-	applymovement LOCALID_BILL_HUMAN, Route25_SeaCottage_Movement_BillWalkToMiddleOfRoom
-	waitmovement 0
-	special RemoveCameraObject
-	releaseall
 	end
-
 Route25_SeaCottage_EventScript_PlayTeleporterBeepSE::
 	playse SE_BALL
 	waitse

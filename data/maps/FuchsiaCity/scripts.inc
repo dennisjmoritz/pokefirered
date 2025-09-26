@@ -1,5 +1,6 @@
 FuchsiaCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, FuchsiaCity_OnTransition
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 FuchsiaCity_OnTransition::
@@ -136,4 +137,8 @@ FuchsiaCity_EventScript_OmanyteSign::
 	msgbox FuchsiaCity_Text_OmanyteSign
 	hidemonpic
 	releaseall
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_FUCHSIA
 	end

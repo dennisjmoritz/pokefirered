@@ -48,17 +48,8 @@ Route24_EventScript_RocketTrigger::
 	end
 
 Route24_EventScript_BattleRocket::
-	giveitem_msg Route24_Text_ReceivedNuggetFromMysteryTrainer, ITEM_NUGGET
-	message Route24_Text_JoinTeamRocket
-	waitmessage
-	playbgm MUS_ENCOUNTER_ROCKET, 0
-	waitbuttonpress
-	setvar VAR_LAST_TALKED, LOCALID_ROUTE24_ROCKET
 	trainerbattle_no_intro TRAINER_TEAM_ROCKET_GRUNT_6, Route24_Text_RocketDefeat
-	msgbox Route24_Text_YoudBecomeTopRocketLeader
-	setvar VAR_MAP_SCENE_ROUTE24, 1
-	return
-
+	end
 Route24_EventScript_RocketApproachPlayer::
 	applymovement LOCALID_ROUTE24_ROCKET, Route24_Movement_RocketApproachPlayer
 	waitmovement 0

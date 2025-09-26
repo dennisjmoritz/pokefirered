@@ -1,6 +1,7 @@
 OneIsland_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OneIsland_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, OneIsland_OnFrame
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 OneIsland_OnTransition::
@@ -103,4 +104,8 @@ OneIsland_EventScript_IslandSign::
 
 OneIsland_EventScript_PokemonNetCenterSign::
 	msgbox OneIsland_Text_PokemonNetCenterSign, MSGBOX_SIGN
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_ONE
 	end

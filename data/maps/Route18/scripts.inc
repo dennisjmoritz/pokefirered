@@ -8,9 +8,7 @@ Route18_OnTransition::
 	end
 
 Route18_OnTransitionCyclingRoad::
-	setflag FLAG_SYS_ON_CYCLING_ROAD
-	return
-
+	end
 Route18_OnWarp::
 	map_script_2 VAR_MAP_SCENE_ROUTE16, 1, Route18_OnWarpCyclingRoad
 	.2byte 0

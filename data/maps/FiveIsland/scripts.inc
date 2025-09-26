@@ -1,5 +1,6 @@
 FiveIsland_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, FiveIsland_OnTransition
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 FiveIsland_OnTransition::
@@ -16,4 +17,8 @@ FiveIsland_EventScript_BugCatcher::
 
 FiveIsland_EventScript_Fisher::
 	msgbox FiveIsland_Text_BeenGettingBusierAroundHere, MSGBOX_NPC
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_FIVE
 	end

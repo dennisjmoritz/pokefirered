@@ -123,27 +123,17 @@ PokemonLeague_LancesRoom_EventScript_RematchIntro::
 
 PokemonLeague_LancesRoom_EventScript_Battle::
 	trainerbattle_no_intro TRAINER_ELITE_FOUR_LANCE, PokemonLeague_LancesRoom_Text_Defeat
-	return
-
+	end
 PokemonLeague_LancesRoom_EventScript_Rematch::
 	trainerbattle_no_intro TRAINER_ELITE_FOUR_LANCE_2, PokemonLeague_LancesRoom_Text_Defeat
-	return
-
+	end
 PokemonLeague_LancesRoom_EventScript_PostBattle::
 	msgbox PokemonLeague_LancesRoom_Text_PostBattle
 	release
 	end
 
 PokemonLeague_LancesRoom_EventScript_DefeatedLance::
-	setvar VAR_0x8004, 0
-	special Script_TryGainNewFanFromCounter
-	setflag FLAG_DEFEATED_LANCE
-	call PokemonLeague_EventScript_OpenDoorLance
-	msgbox PokemonLeague_LancesRoom_Text_PostBattle
-	closemessage
-	release
 	end
-
 PokemonLeague_LancesRoom_EventScript_LanceMoveOutOfWayLeft::
 	applymovement LOCALID_LANCE, PokemonLeague_LancesRoom_Movement_LanceMoveOutOfWayLeft
 	waitmovement 0

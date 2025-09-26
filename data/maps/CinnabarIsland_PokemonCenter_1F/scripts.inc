@@ -1,6 +1,7 @@
 CinnabarIsland_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, CinnabarIsland_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Dex
 	.byte 0
 
 CinnabarIsland_PokemonCenter_1F_OnTransition::
@@ -27,28 +28,7 @@ CinnabarIsland_PokemonCenter_1F_EventScript_Youngster::
 	end
 
 CinnabarIsland_PokemonCenter_1F_EventScript_Bill::
-	lock
-	faceplayer
-	msgbox CinnabarIsland_PokemonCenter_1F_Text_ReadyToSailToOneIsland, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, CinnabarIsland_PokemonCenter_1F_EventScript_NotReadyToSail
-	msgbox CinnabarIsland_PokemonCenter_1F_Text_LetsGo
-	closemessage
-	playbgm MUS_FOLLOW_ME, 1
-	savebgm MUS_FOLLOW_ME
-	setflag FLAG_DONT_TRANSITION_MUSIC
-	setflag FLAG_HIDE_CINNABAR_POKECENTER_BILL
-	delay 20
-	call_if_eq VAR_FACING, DIR_SOUTH, CinnabarIsland_PokemonCenter_1F_EventScript_ExitWithBillSouth
-	call_if_eq VAR_FACING, DIR_EAST, CinnabarIsland_PokemonCenter_1F_EventScript_ExitWithBillEast
-	call_if_eq VAR_FACING, DIR_WEST, CinnabarIsland_PokemonCenter_1F_EventScript_ExitWithBillWest
-	removeobject LOCALID_CINNABAR_POKEMON_CENTER_BILL
-	setvar VAR_MAP_SCENE_CINNABAR_ISLAND_2, 1
-	clearflag FLAG_HIDE_CINNABAR_BILL
-	warp MAP_CINNABAR_ISLAND, 14, 11
-	waitstate
-	release
 	end
-
 CinnabarIsland_PokemonCenter_1F_EventScript_ExitWithBillSouth::
 	applymovement LOCALID_CINNABAR_POKEMON_CENTER_BILL, CinnabarIsland_PokemonCenter_1F_Movement_BillExit
 	applymovement LOCALID_PLAYER, CinnabarIsland_PokemonCenter_1F_Movement_PlayerExitSouth
@@ -138,3 +118,8 @@ CinnabarIsland_PokemonCenter_1F_Movement_PlayerExitWest::
 	delay_16
 	walk_down
 	step_end
+
+OnTransition_Dex::
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	end

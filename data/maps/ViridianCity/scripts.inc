@@ -1,5 +1,6 @@
 ViridianCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, ViridianCity_OnTransition
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 ViridianCity_OnTransition::
@@ -235,3 +236,7 @@ ViridianCity_EventScript_DoTutorialBattle::
 	giveitem ITEM_TEACHY_TV
 	msgbox ViridianCity_Text_WatchThatToLearnBasics
 	return
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_VIRIDIAN
+	end

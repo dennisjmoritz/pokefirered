@@ -22,31 +22,11 @@ CeruleanCave_B1F_EventScript_ShowMewtwo::
 	return
 
 CeruleanCave_B1F_EventScript_Mewtwo::
-	goto_if_questlog EventScript_ReleaseEnd
-	special QuestLog_CutRecording
-	lock
-	faceplayer
-	waitse
 	playmoncry SPECIES_MEWTWO, CRY_MODE_ENCOUNTER
-	message CeruleanCave_B1F_Text_Mew
-	waitmessage
 	waitmoncry
-	delay 20
 	playbgm MUS_ENCOUNTER_GYM_LEADER, 0
-	waitbuttonpress
 	setwildbattle SPECIES_MEWTWO, 70
-	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	special StartLegendaryBattle
-	waitstate
-	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, CeruleanCave_B1F_EventScript_DefeatedMewtwo
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, CeruleanCave_B1F_EventScript_RanFromMewtwo
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, CeruleanCave_B1F_EventScript_RanFromMewtwo
-	setflag FLAG_FOUGHT_MEWTWO
-	release
 	end
-
 CeruleanCave_B1F_EventScript_DefeatedMewtwo::
 	setflag FLAG_FOUGHT_MEWTWO
 	goto EventScript_RemoveStaticMon

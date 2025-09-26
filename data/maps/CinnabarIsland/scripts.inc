@@ -1,6 +1,7 @@
 CinnabarIsland_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, CinnabarIsland_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, CinnabarIsland_OnFrame
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 CinnabarIsland_OnTransition::
@@ -63,19 +64,7 @@ CinnabarIsland_EventScript_ExitPokeCenterForOneIsland::
 	end
 
 CinnabarIsland_EventScript_ReturnFromSeviiIslands::
-	lockall
-	textcolor NPC_TEXT_COLOR_MALE
-	msgbox CinnabarIsland_Text_IfYouHaveTriPassYouCanGoAgain
-	closemessage
-	applymovement LOCALID_CINNABAR_BILL, CinnabarIsland_Movement_BillExit
-	waitmovement 0
-	removeobject LOCALID_CINNABAR_BILL
-	setvar VAR_MAP_SCENE_CINNABAR_ISLAND, 4
-	setflag FLAG_HIDE_TWO_ISLAND_GAME_CORNER_LOSTELLE
-	clearflag FLAG_HIDE_LOSTELLE_IN_HER_HOME
-	releaseall
 	end
-
 CinnabarIsland_Movement_BillExit::
 	walk_down
 	walk_down
@@ -189,24 +178,7 @@ CinnabarIsland_Movement_BillReEnterPokeCenter::
 
 @ Can be triggered outside, or after talking to Bill in the poke center
 CinnabarIsland_EventScript_SailToOneIsland::
-	call_if_set FLAG_TEMP_2, CinnabarIsland_EventScript_ApproachShore
-	addobject LOCALID_CINNABAR_SEAGALLOP
-	call_if_unset FLAG_TEMP_2, CinnabarIsland_EventScript_BoatArrive
-	call_if_set FLAG_TEMP_2, CinnabarIsland_EventScript_BoatArriveExitedPokeCenter
-	msgbox CinnabarIsland_Text_MyPalsBoatArrived
-	closemessage
-	call_if_unset FLAG_TEMP_2, CinnabarIsland_EventScript_BoardBoat
-	call_if_set FLAG_TEMP_2, CinnabarIsland_EventScript_BoardBoatExitedPokeCenter
-	setvar VAR_MAP_SCENE_CINNABAR_ISLAND, 2
-	removeobject LOCALID_CINNABAR_BILL
-	delay 40
-	setflag FLAG_HIDE_CINNABAR_SEAGALLOP
-	setvar VAR_MAP_SCENE_ONE_ISLAND_HARBOR, 1
-	setvar VAR_0x8004, SEAGALLOP_CINNABAR_ISLAND
-	setvar VAR_0x8006, SEAGALLOP_ONE_ISLAND
-	goto EventScript_SetSail
 	end
-
 CinnabarIsland_EventScript_ApproachShore::
 	applymovement LOCALID_CINNABAR_BILL, CinnabarIsland_Movement_ApproachShore
 	applymovement LOCALID_PLAYER, CinnabarIsland_Movement_ApproachShore
@@ -349,4 +321,8 @@ CinnabarIsland_EventScript_GymSign::
 	famechecker FAMECHECKER_BLAINE, 0
 	msgbox CinnabarIsland_Text_GymSign
 	releaseall
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_CINNABAR
 	end

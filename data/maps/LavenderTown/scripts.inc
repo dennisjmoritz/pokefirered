@@ -1,13 +1,10 @@
 LavenderTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LavenderTown_OnTransition
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 LavenderTown_OnTransition::
-	setworldmapflag FLAG_WORLD_MAP_LAVENDER_TOWN
-	setvar VAR_MAP_SCENE_S_S_ANNE_2F_CORRIDOR, 1
-	setflag FLAG_HIDE_SS_ANNE_RIVAL
 	end
-
 LavenderTown_EventScript_LittleGirl::
 	lock
 	faceplayer
@@ -44,4 +41,8 @@ LavenderTown_EventScript_VolunteerHouseSign::
 
 LavenderTown_EventScript_PokemonTowerSign::
 	msgbox LavenderTown_Text_PokemonTowerSign, MSGBOX_SIGN
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_LAVENDER
 	end

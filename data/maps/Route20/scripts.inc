@@ -8,25 +8,9 @@ Route20_OnTransition::
 	end
 
 Route20_EventScript_ResetSeafoamBouldersForB3F::
-	clearflag FLAG_HIDE_SEAFOAM_1F_BOULDER_1
-	clearflag FLAG_HIDE_SEAFOAM_1F_BOULDER_2
-	setflag FLAG_HIDE_SEAFOAM_B1F_BOULDER_1
-	setflag FLAG_HIDE_SEAFOAM_B1F_BOULDER_2
-	setflag FLAG_HIDE_SEAFOAM_B2F_BOULDER_1
-	setflag FLAG_HIDE_SEAFOAM_B2F_BOULDER_2
-	setflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_1
-	setflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_2
-	return
-
+	end
 Route20_EventScript_ResetSeafoamBouldersForB4F::
-	clearflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_3
-	clearflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_4
-	clearflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_5
-	clearflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_6
-	setflag FLAG_HIDE_SEAFOAM_B4F_BOULDER_1
-	setflag FLAG_HIDE_SEAFOAM_B4F_BOULDER_2
-	return
-
+	end
 Route20_EventScript_SeafoamIslandsSign::
 	msgbox Route20_Text_SeafoamIslands, MSGBOX_SIGN
 	end

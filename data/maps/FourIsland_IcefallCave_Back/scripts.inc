@@ -7,85 +7,10 @@ FourIsland_IcefallCave_Back_OnTransition::
 	end
 
 FourIsland_IcefallCave_Back_EventScript_HideLorelei::
-	setflag FLAG_HIDE_ICEFALL_CAVE_LORELEI
-	return
-
-FourIsland_IcefallCave_Back_EventScript_LoreleiRocketsScene::
-	lockall
-	textcolor NPC_TEXT_COLOR_FEMALE
-	msgbox FourIsland_IcefallCave_Back_Text_LoreleiKeepHandsOffMons
-	applymovement LOCALID_ICEFALL_ROCKET1, FourIsland_IcefallCave_Back_Movement_WalkInPlaceDown
-	waitmovement 0
-	textcolor NPC_TEXT_COLOR_MALE
-	msgbox FourIsland_IcefallCave_Back_Text_ShutItLadyLeaveUsBe
-	closemessage
-	playse SE_PIN
-	applymovement LOCALID_ICEFALL_LORELEI, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement LOCALID_ICEFALL_LORELEI, Common_Movement_WalkInPlaceFasterDown
-	waitmovement 0
-	applymovement LOCALID_ICEFALL_LORELEI, Common_Movement_Delay48
-	waitmovement 0
-	textcolor NPC_TEXT_COLOR_FEMALE
-	msgbox FourIsland_IcefallCave_Back_Text_LoreleiPlayerHelpMeKickPoachersOut
-	closemessage
-	applymovement LOCALID_ICEFALL_LORELEI, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	delay 18
-	applymovement LOCALID_ICEFALL_LORELEI, Common_Movement_WalkInPlaceFasterDown
-	waitmovement 0
-	delay 35
-	applymovement LOCALID_ICEFALL_ROCKET3, FourIsland_IcefallCave_Back_Movement_Rocket3FaceLorelei
-	applymovement LOCALID_ICEFALL_LORELEI, FourIsland_IcefallCave_Back_Movement_LoreleiToRockets
-	applymovement LOCALID_PLAYER, FourIsland_IcefallCave_Back_Movement_PlayerToRockets
-	waitmovement 0
-	applymovement LOCALID_ICEFALL_ROCKET2, FourIsland_IcefallCave_Back_Movement_WalkInPlaceDown
-	waitmovement 0
-	playbgm MUS_ENCOUNTER_ROCKET, 0
-	textcolor NPC_TEXT_COLOR_MALE
-	msgbox FourIsland_IcefallCave_Back_Text_GruntIntro
-	setvar VAR_LAST_TALKED, LOCALID_ICEFALL_ROCKET3
-	trainerbattle_no_intro TRAINER_TEAM_ROCKET_GRUNT_45, FourIsland_IcefallCave_Back_Text_GruntDefeat
-	applymovement LOCALID_ICEFALL_LORELEI, FourIsland_IcefallCave_Back_Movement_WalkInPlaceUp
-	waitmovement 0
-	textcolor NPC_TEXT_COLOR_FEMALE
-	msgbox FourIsland_IcefallCave_Back_Text_LoreleiWhereHaveYouTakenMons
-	textcolor NPC_TEXT_COLOR_MALE
-	msgbox FourIsland_IcefallCave_Back_Text_NotTellingYouThat
-	textcolor NPC_TEXT_COLOR_FEMALE
-	message FourIsland_IcefallCave_Back_Text_LoreleiWellDeepFreezeYou
-	waitmessage
-	waitse
-	playmoncry SPECIES_LAPRAS, CRY_MODE_ENCOUNTER
-	waitbuttonpress
-	waitmoncry
-	applymovement LOCALID_ICEFALL_ROCKET1, FourIsland_IcefallCave_Back_Movement_Rocket1ReactToThreat
-	waitmovement 0
-	textcolor NPC_TEXT_COLOR_MALE
-	msgbox FourIsland_IcefallCave_Back_Text_OkayRocketWareHouseFiveIsland
-	closemessage
-	applymovement LOCALID_ICEFALL_LORELEI, FourIsland_IcefallCave_Back_Movement_LoreleiWatchRocketsExit
-	applymovement LOCALID_PLAYER, FourIsland_IcefallCave_Back_Movement_PlayerWatchRocketsExit
-	applymovement LOCALID_ICEFALL_ROCKET1, FourIsland_IcefallCave_Back_Movement_Rocket1Exit
-	applymovement LOCALID_ICEFALL_ROCKET2, FourIsland_IcefallCave_Back_Movement_Rocket2Exit
-	applymovement LOCALID_ICEFALL_ROCKET3, FourIsland_IcefallCave_Back_Movement_Rocket3Exit
-	waitmovement 0
-	removeobject LOCALID_ICEFALL_ROCKET1
-	removeobject LOCALID_ICEFALL_ROCKET2
-	removeobject LOCALID_ICEFALL_ROCKET3
-	delay 50
-	applymovement LOCALID_ICEFALL_LORELEI, FourIsland_IcefallCave_Back_Movement_LoreleiWalkToPlayer
-	waitmovement 0
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
-	textcolor NPC_TEXT_COLOR_FEMALE
-	msgbox FourIsland_IcefallCave_Back_Text_ThankYouThisIsAwful
-	setflag FLAG_HIDE_RUIN_VALLEY_SCIENTIST
-	clearflag FLAG_HIDE_LORELEI_IN_HER_HOUSE
-	setvar VAR_MAP_SCENE_ICEFALL_CAVE_BACK, 1
-	releaseall
 	end
-
+FourIsland_IcefallCave_Back_EventScript_LoreleiRocketsScene::
+	trainerbattle_no_intro TRAINER_TEAM_ROCKET_GRUNT_45, FourIsland_IcefallCave_Back_Text_GruntDefeat
+	end
 FourIsland_IcefallCave_Back_Movement_PlayerToRockets::
 	walk_up
 	walk_up

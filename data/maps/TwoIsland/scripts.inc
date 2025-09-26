@@ -1,5 +1,6 @@
 TwoIsland_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, TwoIsland_OnTransition
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 TwoIsland_OnTransition::
@@ -214,4 +215,8 @@ TwoIsland_EventScript_JoyfulGameCornerSign::
 
 TwoIsland_EventScript_FastCurrentSign::
 	msgbox TwoIsland_Text_DangerFastCurrent, MSGBOX_SIGN
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_TWO
 	end

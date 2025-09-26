@@ -1,6 +1,7 @@
 IndigoPlateau_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, IndigoPlateau_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Dex
 	.byte 0
 
 IndigoPlateau_PokemonCenter_1F_OnTransition::
@@ -67,4 +68,9 @@ IndigoPlateau_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse
 	release
+	end
+
+OnTransition_Dex::
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
 	end
