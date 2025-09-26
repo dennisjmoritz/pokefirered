@@ -1,5 +1,6 @@
 CeladonCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, CeladonCity_OnTransition
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 CeladonCity_OnTransition::
@@ -100,4 +101,8 @@ CeladonCity_EventScript_PrizeExchangeSign::
 
 CeladonCity_EventScript_GameCornerSign::
 	msgbox CeladonCity_Text_GameCornerSign, MSGBOX_SIGN
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_CELADON
 	end
