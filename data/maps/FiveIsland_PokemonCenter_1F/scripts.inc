@@ -1,6 +1,7 @@
 FiveIsland_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, FiveIsland_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Dex
 	.byte 0
 
 FiveIsland_PokemonCenter_1F_OnTransition::
@@ -20,4 +21,9 @@ FiveIsland_PokemonCenter_1F_EventScript_Chef::
 
 FiveIsland_PokemonCenter_1F_EventScript_CooltrainerF::
 	msgbox FiveIsland_PokemonCenter_1F_Text_YoureOnQuestToCatchEveryMon, MSGBOX_NPC
+	end
+
+OnTransition_Dex::
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
 	end

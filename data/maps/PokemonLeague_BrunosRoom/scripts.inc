@@ -69,12 +69,10 @@ PokemonLeague_BrunosRoom_EventScript_RematchIntro::
 
 PokemonLeague_BrunosRoom_EventScript_Battle::
 	trainerbattle_no_intro TRAINER_ELITE_FOUR_BRUNO, PokemonLeague_BrunosRoom_Text_Defeat
-	return
-
+	end
 PokemonLeague_BrunosRoom_EventScript_Rematch::
 	trainerbattle_no_intro TRAINER_ELITE_FOUR_BRUNO_2, PokemonLeague_BrunosRoom_Text_Defeat
-	return
-
+	end
 PokemonLeague_BrunosRoom_EventScript_PostBattle::
 	msgbox PokemonLeague_BrunosRoom_Text_PostBattle
 	closemessage
@@ -86,17 +84,7 @@ PokemonLeague_BrunosRoom_EventScript_PostBattle::
 	end
 
 PokemonLeague_BrunosRoom_EventScript_DefeatedBruno::
-	setflag FLAG_DEFEATED_BRUNO
-	call PokemonLeague_EventScript_OpenDoor
-	msgbox PokemonLeague_BrunosRoom_Text_PostBattle
-	closemessage
-	call_if_eq VAR_FACING, DIR_NORTH, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayRight
-	call_if_eq VAR_FACING, DIR_SOUTH, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayLeft
-	call_if_eq VAR_FACING, DIR_WEST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
-	call_if_eq VAR_FACING, DIR_EAST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
-	release
 	end
-
 PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayLeft::
 	applymovement LOCALID_BRUNO, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0

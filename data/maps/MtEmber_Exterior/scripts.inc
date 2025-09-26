@@ -35,26 +35,10 @@ MtEmber_Exterior_EventScript_Grunt1Defeated::
 	end
 
 MtEmber_Exterior_EventScript_BattleGrunt1::
-	applymovement LOCALID_MT_EMBER_GRUNT1, Common_Movement_FacePlayer
-	waitmovement 0
-	playbgm MUS_ENCOUNTER_ROCKET, 0
-	msgbox MtEmber_Exterior_Text_Grunt1Intro
 	trainerbattle_no_intro TRAINER_TEAM_ROCKET_GRUNT_43, MtEmber_Exterior_Text_Grunt1Defeat
-	msgbox MtEmber_Exterior_Text_Grunt1PostBattle
-	goto_if_defeated TRAINER_TEAM_ROCKET_GRUNT_44, MtEmber_Exterior_EventScript_DefeatedBothGrunts
-	release
 	end
-
 MtEmber_Exterior_EventScript_DefeatedBothGrunts::
-	msgbox MtEmber_Exterior_Text_WellRegroupDontStepInsideThere
-	closemessage
-	fadescreen FADE_TO_BLACK
-	removeobject LOCALID_MT_EMBER_GRUNT1
-	removeobject LOCALID_MT_EMBER_GRUNT2
-	fadescreen FADE_FROM_BLACK
-	release
 	end
-
 MtEmber_Exterior_EventScript_Grunt2::
 	lock
 	faceplayer
@@ -73,14 +57,8 @@ MtEmber_Exterior_EventScript_DefeatedGrunt2::
 	end
 
 MtEmber_Exterior_EventScript_BattleGrunt2::
-	playbgm MUS_ENCOUNTER_ROCKET, 0
-	msgbox MtEmber_Exterior_Text_Grunt2Intro
 	trainerbattle_no_intro TRAINER_TEAM_ROCKET_GRUNT_44, MtEmber_Exterior_Text_Grunt2Defeat
-	msgbox MtEmber_Exterior_Text_Grunt2PostBattle
-	goto_if_defeated TRAINER_TEAM_ROCKET_GRUNT_43, MtEmber_Exterior_EventScript_DefeatedBothGrunts
-	release
 	end
-
 MtEmber_Exterior_EventScript_RocketPasswordScene::
 	lockall
 	textcolor NPC_TEXT_COLOR_MALE

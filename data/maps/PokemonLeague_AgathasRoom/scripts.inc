@@ -70,20 +70,14 @@ PokemonLeague_AgathasRoom_EventScript_RematchIntro::
 
 PokemonLeague_AgathasRoom_EventScript_Battle::
 	trainerbattle_no_intro TRAINER_ELITE_FOUR_AGATHA, PokemonLeague_AgathasRoom_Text_Defeat
-	return
-
+	end
 PokemonLeague_AgathasRoom_EventScript_Rematch::
 	trainerbattle_no_intro TRAINER_ELITE_FOUR_AGATHA_2, PokemonLeague_AgathasRoom_Text_Defeat
-	return
-
+	end
 PokemonLeague_AgathasRoom_EventScript_PostBattle::
 	msgbox PokemonLeague_AgathasRoom_Text_PostBattle
 	release
 	end
 
 PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha::
-	setflag FLAG_DEFEATED_AGATHA
-	call PokemonLeague_EventScript_OpenDoor
-	msgbox PokemonLeague_AgathasRoom_Text_PostBattle
-	release
 	end

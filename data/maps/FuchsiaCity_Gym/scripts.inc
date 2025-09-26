@@ -2,22 +2,10 @@ FuchsiaCity_Gym_MapScripts::
 	.byte 0
 
 FuchsiaCity_Gym_EventScript_Koga::
-	famechecker FAMECHECKER_KOGA, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	trainerbattle_single TRAINER_LEADER_KOGA, FuchsiaCity_Gym_Text_KogaIntro, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM06_FROM_KOGA, FuchsiaCity_Gym_EventScript_GiveTM06
-	msgbox FuchsiaCity_Gym_Text_KogaPostBattle
-	release
 	end
-
 FuchsiaCity_Gym_EventScript_DefeatedKoga::
-	famechecker FAMECHECKER_KOGA, 1
-	clearflag FLAG_HIDE_FAME_CHECKER_KOGA_JOURNAL
-	setflag FLAG_DEFEATED_KOGA
-	setflag FLAG_BADGE05_GET
-	set_gym_trainers 5
-	goto FuchsiaCity_Gym_EventScript_GiveTM06
 	end
-
 FuchsiaCity_Gym_EventScript_GiveTM06::
 	msgbox FuchsiaCity_Gym_Text_KogaExplainSoulBadge
 	checkitemspace ITEM_TM06
