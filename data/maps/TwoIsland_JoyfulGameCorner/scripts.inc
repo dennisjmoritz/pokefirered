@@ -46,52 +46,7 @@ TwoIsland_JoyfulGameCorner_EventScript_FoundLostelleScene::
 	end
 
 TwoIsland_JoyfulGameCorner_EventScript_HelpFindLostelleScene::
-	lockall
-	textcolor NPC_TEXT_COLOR_MALE
-	applymovement LOCALID_JOYFUL_GAME_CORNER_DADDY, TwoIsland_JoyfulGameCorner_Movement_DaddyPacing
-	waitmovement 0
-	msgbox TwoIsland_JoyfulGameCorner_Text_WhereHasLostelleGottenTo
-	closemessage
-	applymovement LOCALID_JOYFUL_GAME_CORNER_DADDY, Common_Movement_WalkInPlaceFasterDown
-	waitmovement 0
-	playse SE_PIN
-	applymovement LOCALID_JOYFUL_GAME_CORNER_DADDY, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement LOCALID_JOYFUL_GAME_CORNER_DADDY, Common_Movement_Delay48
-	waitmovement 0
-	applymovement LOCALID_JOYFUL_GAME_CORNER_DADDY, TwoIsland_JoyfulGameCorner_Movement_DaddyApproachPlayer
-	waitmovement 0
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	msgbox TwoIsland_JoyfulGameCorner_Text_PleaseHelpFindLostelle
-	closemessage
-	playse SE_RS_DOOR
-	waitse
-	applymovement LOCALID_PLAYER, TwoIsland_JoyfulGameCorner_Movement_PlayerFaceDaddy
-	waitmovement 0
-	playbgm MUS_ENCOUNTER_BOY, 0
-	addobject LOCALID_JOYFUL_GAME_CORNER_BIKER
-	applymovement LOCALID_JOYFUL_GAME_CORNER_BIKER, TwoIsland_JoyfulGameCorner_Movement_BikerLookAround
-	waitmovement 0
-	msgbox TwoIsland_JoyfulGameCorner_Text_IsThisOnlyThreeIsland
-	applymovement LOCALID_JOYFUL_GAME_CORNER_BIKER, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	msgbox TwoIsland_JoyfulGameCorner_Text_ThisIsTwoIslandMoveIt
-	msgbox TwoIsland_JoyfulGameCorner_Text_TheseIslandsAreConfusing
-	closemessage
-	applymovement LOCALID_JOYFUL_GAME_CORNER_BIKER, Common_Movement_WalkInPlaceFasterDown
-	waitmovement 0
-	playse SE_EXIT
-	removeobject LOCALID_JOYFUL_GAME_CORNER_BIKER
-	fadedefaultbgm
-	delay 60
-	msgbox TwoIsland_JoyfulGameCorner_Text_PunkScuffedUpMyFloor
-	clearflag FLAG_HIDE_THREE_ISLAND_LONE_BIKER
-	setvar VAR_MAP_SCENE_THREE_ISLAND, 2
-	setvar VAR_MAP_SCENE_TWO_ISLAND_JOYFUL_GAME_CORNER, 1
-	releaseall
 	end
-
 TwoIsland_JoyfulGameCorner_Movement_DaddyPacing::
 	walk_left
 	walk_right

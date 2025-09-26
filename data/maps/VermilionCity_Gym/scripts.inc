@@ -204,23 +204,10 @@ VermilionCity_Gym_EventScript_SetBeamsOn::
 	return
 
 VermilionCity_Gym_EventScript_LtSurge::
-	famechecker FAMECHECKER_LTSURGE, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Gym_Text_LtSurgeIntro, VermilionCity_Gym_Text_LtSurgeDefeat, VermilionCity_Gym_EventScript_DefeatedLtSurge, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM34_FROM_SURGE, VermilionCity_Gym_EventScript_GiveTM34
-	msgbox VermilionCity_Gym_Text_LtSurgePostBattle
-	release
 	end
-
 VermilionCity_Gym_EventScript_DefeatedLtSurge::
-	famechecker FAMECHECKER_LTSURGE, 1
-	call_if_unset FLAG_GOT_HM05, VermilionCity_Gym_EventScript_ShowOaksAide
-	clearflag FLAG_HIDE_FAME_CHECKER_LT_SURGE_JOURNAL
-	setflag FLAG_DEFEATED_LT_SURGE
-	setflag FLAG_BADGE03_GET
-	set_gym_trainers 3
-	goto VermilionCity_Gym_EventScript_GiveTM34
 	end
-
 VermilionCity_Gym_EventScript_ShowOaksAide::
 	clearflag FLAG_HIDE_VERMILION_CITY_OAKS_AIDE
 	return

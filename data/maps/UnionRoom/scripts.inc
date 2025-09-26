@@ -4,25 +4,7 @@ UnionRoom_MapScripts::
 	.byte 0
 
 UnionRoom_OnResume::
-	setflag FLAG_HIDE_UNION_ROOM_PLAYER_1
-	setflag FLAG_HIDE_UNION_ROOM_PLAYER_2
-	setflag FLAG_HIDE_UNION_ROOM_PLAYER_3
-	setflag FLAG_HIDE_UNION_ROOM_PLAYER_4
-	setflag FLAG_HIDE_UNION_ROOM_PLAYER_5
-	setflag FLAG_HIDE_UNION_ROOM_PLAYER_6
-	setflag FLAG_HIDE_UNION_ROOM_PLAYER_7
-	setflag FLAG_HIDE_UNION_ROOM_PLAYER_8
-	removeobject LOCALID_UNION_ROOM_PLAYER_1
-	removeobject LOCALID_UNION_ROOM_PLAYER_2
-	removeobject LOCALID_UNION_ROOM_PLAYER_3
-	removeobject LOCALID_UNION_ROOM_PLAYER_4
-	removeobject LOCALID_UNION_ROOM_PLAYER_5
-	removeobject LOCALID_UNION_ROOM_PLAYER_6
-	removeobject LOCALID_UNION_ROOM_PLAYER_7
-	removeobject LOCALID_UNION_ROOM_PLAYER_8
-	special RunUnionRoom
 	end
-
 UnionRoom_OnTransition::
 	end
 

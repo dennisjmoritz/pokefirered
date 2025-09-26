@@ -8,39 +8,10 @@ ThreeIsland_BerryForest_OnTransition::
 	end
 
 ThreeIsland_BerryForest_EventScript_Lostelle::
-	lock
-	faceplayer
-	msgbox ThreeIsland_BerryForest_Text_HelpScaryPokemon
-	playse SE_PIN
-	applymovement LOCALID_BERRY_FOREST_LOSTELLE, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement LOCALID_BERRY_FOREST_LOSTELLE, ThreeIsland_BerryForest_Movement_LostelleLookAround
-	waitmovement 0
-	msgbox ThreeIsland_BerryForest_Text_HereItComesAgain
-	goto_if_questlog EventScript_ReleaseEnd
-	waitse
 	playmoncry SPECIES_HYPNO, CRY_MODE_ENCOUNTER
 	waitmoncry
 	setwildbattle SPECIES_HYPNO, 30
-	dowildbattle
-	special QuestLog_CutRecording
-	applymovement LOCALID_BERRY_FOREST_LOSTELLE, Common_Movement_FacePlayer
-	waitmovement 0
-	msgbox ThreeIsland_BerryForest_Text_ThankYouHaveThis
-	giveitem ITEM_IAPAPA_BERRY
-	call_if_eq VAR_RESULT, FALSE, ThreeIsland_BerryForest_EventScript_NoRoomForBerry
-	special BufferBigGuyOrBigGirlString
-	msgbox ThreeIsland_BerryForest_Text_LetsGoHome
-	closemessage
-	setflag FLAG_RESCUED_LOSTELLE
-	setflag FLAG_HIDE_LOSTELLE_IN_BERRY_FOREST
-	setvar VAR_MAP_SCENE_TWO_ISLAND_JOYFUL_GAME_CORNER, 2
-	clearflag FLAG_HIDE_TWO_ISLAND_GAME_CORNER_LOSTELLE
-	warp MAP_TWO_ISLAND_JOYFUL_GAME_CORNER, 6, 6
-	waitstate
-	release
 	end
-
 ThreeIsland_BerryForest_EventScript_NoRoomForBerry::
 	msgbox ThreeIsland_BerryForest_Text_BerryPouchIsFull
 	return

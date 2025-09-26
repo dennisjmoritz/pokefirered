@@ -48,7 +48,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/BirthIsland_Exterior/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/BirthIsland_Exterior/map.json",
       "map_name": "BirthIsland_Exterior",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 14,
         "keep": 12,
@@ -348,7 +348,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeladonCity_GameCorner/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeladonCity_GameCorner/map.json",
       "map_name": "CeladonCity_GameCorner",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 67,
         "keep": 66,
@@ -388,7 +388,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeladonCity_Gym/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeladonCity_Gym/map.json",
       "map_name": "CeladonCity_Gym",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 14,
         "keep": 12,
@@ -548,7 +548,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeruleanCave_B1F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeruleanCave_B1F/map.json",
       "map_name": "CeruleanCave_B1F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 8,
         "keep": 7,
@@ -568,7 +568,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeruleanCity/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeruleanCity/map.json",
       "map_name": "CeruleanCity",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 47,
         "keep": 39,
@@ -608,7 +608,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeruleanCity_Gym/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeruleanCity_Gym/map.json",
       "map_name": "CeruleanCity_Gym",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 11,
         "keep": 9,
@@ -628,7 +628,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeruleanCity_House1/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/CeruleanCity_House1/map.json",
       "map_name": "CeruleanCity_House1",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 12,
         "keep": 11,
@@ -788,7 +788,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/CinnabarIsland/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/CinnabarIsland/map.json",
       "map_name": "CinnabarIsland",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 47,
         "keep": 45,
@@ -808,7 +808,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/CinnabarIsland_Gym/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/CinnabarIsland_Gym/map.json",
       "map_name": "CinnabarIsland_Gym",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 112,
         "keep": 110,
@@ -848,7 +848,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/CinnabarIsland_PokemonCenter_1F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/CinnabarIsland_PokemonCenter_1F/map.json",
       "map_name": "CinnabarIsland_PokemonCenter_1F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 16,
         "keep": 15,
@@ -1148,7 +1148,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/FiveIsland_LostCave_Room10/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/FiveIsland_LostCave_Room10/map.json",
       "map_name": "FiveIsland_LostCave_Room10",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 9,
         "keep": 7,
@@ -1408,7 +1408,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/FiveIsland_Meadow/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/FiveIsland_Meadow/map.json",
       "map_name": "FiveIsland_Meadow",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 9,
         "keep": 5,
@@ -1528,7 +1528,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/FiveIsland_RocketWarehouse/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/FiveIsland_RocketWarehouse/map.json",
       "map_name": "FiveIsland_RocketWarehouse",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 27,
         "keep": 20,
@@ -1568,7 +1568,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/FourIsland/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/FourIsland/map.json",
       "map_name": "FourIsland",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 22,
         "keep": 21,
@@ -1688,7 +1688,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/FourIsland_IcefallCave_Back/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/FourIsland_IcefallCave_Back/map.json",
       "map_name": "FourIsland_IcefallCave_Back",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 19,
         "keep": 17,
@@ -1848,7 +1848,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/FuchsiaCity_Gym/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/FuchsiaCity_Gym/map.json",
       "map_name": "FuchsiaCity_Gym",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 15,
         "keep": 13,
@@ -1908,7 +1908,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/FuchsiaCity_House3/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/FuchsiaCity_House3/map.json",
       "map_name": "FuchsiaCity_House3",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 7,
         "keep": 6,
@@ -2048,7 +2048,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/IndigoPlateau_Exterior/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/IndigoPlateau_Exterior/map.json",
       "map_name": "IndigoPlateau_Exterior",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 17,
         "keep": 15,
@@ -2108,7 +2108,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/LavenderTown/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/LavenderTown/map.json",
       "map_name": "LavenderTown",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 10,
         "keep": 9,
@@ -2248,7 +2248,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/MtEmber_Exterior/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/MtEmber_Exterior/map.json",
       "map_name": "MtEmber_Exterior",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 16,
         "keep": 13,
@@ -2428,7 +2428,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/MtEmber_Summit/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/MtEmber_Summit/map.json",
       "map_name": "MtEmber_Summit",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 8,
         "keep": 7,
@@ -2548,7 +2548,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/MtMoon_B2F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/MtMoon_B2F/map.json",
       "map_name": "MtMoon_B2F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 17,
         "keep": 12,
@@ -2608,7 +2608,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/NavelRock_Base/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/NavelRock_Base/map.json",
       "map_name": "NavelRock_Base",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 9,
         "keep": 7,
@@ -2908,7 +2908,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/NavelRock_Summit/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/NavelRock_Summit/map.json",
       "map_name": "NavelRock_Summit",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 9,
         "keep": 7,
@@ -3108,7 +3108,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/OneIsland_KindleRoad_EmberSpa/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/OneIsland_KindleRoad_EmberSpa/map.json",
       "map_name": "OneIsland_KindleRoad_EmberSpa",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 9,
         "keep": 8,
@@ -3128,7 +3128,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/OneIsland_PokemonCenter_1F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/OneIsland_PokemonCenter_1F/map.json",
       "map_name": "OneIsland_PokemonCenter_1F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 60,
         "keep": 55,
@@ -3188,7 +3188,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PalletTown/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PalletTown/map.json",
       "map_name": "PalletTown",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 47,
         "keep": 45,
@@ -3248,7 +3248,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PalletTown_ProfessorOaksLab/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PalletTown_ProfessorOaksLab/map.json",
       "map_name": "PalletTown_ProfessorOaksLab",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 152,
         "keep": 139,
@@ -3268,7 +3268,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PalletTown_RivalsHouse/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PalletTown_RivalsHouse/map.json",
       "map_name": "PalletTown_RivalsHouse",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 24,
         "keep": 23,
@@ -3288,7 +3288,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PewterCity/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PewterCity/map.json",
       "map_name": "PewterCity",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 85,
         "keep": 81,
@@ -3308,7 +3308,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PewterCity_Gym/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PewterCity_Gym/map.json",
       "map_name": "PewterCity_Gym",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 13,
         "keep": 11,
@@ -3428,7 +3428,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PewterCity_PokemonCenter_1F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PewterCity_PokemonCenter_1F/map.json",
       "map_name": "PewterCity_PokemonCenter_1F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 8,
         "keep": 7,
@@ -3468,7 +3468,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_AgathasRoom/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_AgathasRoom/map.json",
       "map_name": "PokemonLeague_AgathasRoom",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 16,
         "keep": 13,
@@ -3488,7 +3488,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_BrunosRoom/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_BrunosRoom/map.json",
       "map_name": "PokemonLeague_BrunosRoom",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 19,
         "keep": 16,
@@ -3508,7 +3508,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_ChampionsRoom/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_ChampionsRoom/map.json",
       "map_name": "PokemonLeague_ChampionsRoom",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 27,
         "keep": 20,
@@ -3528,7 +3528,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_HallOfFame/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_HallOfFame/map.json",
       "map_name": "PokemonLeague_HallOfFame",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 6,
         "keep": 5,
@@ -3548,7 +3548,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_LancesRoom/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_LancesRoom/map.json",
       "map_name": "PokemonLeague_LancesRoom",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 22,
         "keep": 19,
@@ -3568,7 +3568,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_LoreleisRoom/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonLeague_LoreleisRoom/map.json",
       "map_name": "PokemonLeague_LoreleisRoom",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 17,
         "keep": 14,
@@ -3688,7 +3688,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonTower_2F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonTower_2F/map.json",
       "map_name": "PokemonTower_2F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 14,
         "keep": 10,
@@ -3748,7 +3748,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonTower_5F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonTower_5F/map.json",
       "map_name": "PokemonTower_5F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 8,
         "keep": 7,
@@ -3788,7 +3788,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonTower_7F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PokemonTower_7F/map.json",
       "map_name": "PokemonTower_7F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 29,
         "keep": 25,
@@ -3808,7 +3808,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/PowerPlant/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/PowerPlant/map.json",
       "map_name": "PowerPlant",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 14,
         "keep": 11,
@@ -3968,7 +3968,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/RocketHideout_B1F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/RocketHideout_B1F/map.json",
       "map_name": "RocketHideout_B1F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 11,
         "keep": 6,
@@ -3988,7 +3988,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/RocketHideout_B2F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/RocketHideout_B2F/map.json",
       "map_name": "RocketHideout_B2F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 2,
         "keep": 1,
@@ -4008,7 +4008,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/RocketHideout_B3F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/RocketHideout_B3F/map.json",
       "map_name": "RocketHideout_B3F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 3,
         "keep": 1,
@@ -4028,7 +4028,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/RocketHideout_B4F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/RocketHideout_B4F/map.json",
       "map_name": "RocketHideout_B4F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 15,
         "keep": 11,
@@ -4208,7 +4208,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route12/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route12/map.json",
       "map_name": "Route12",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 9,
         "keep": 8,
@@ -4388,7 +4388,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route16/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route16/map.json",
       "map_name": "Route16",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 13,
         "keep": 11,
@@ -4488,7 +4488,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route18/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route18/map.json",
       "map_name": "Route18",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 7,
         "keep": 6,
@@ -4608,7 +4608,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route20/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route20/map.json",
       "map_name": "Route20",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 5,
         "keep": 3,
@@ -4622,7 +4622,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.091979"
+      "last_updated": "2025-09-26T16:56:20.187060"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route21_North/scripts.inc",
@@ -4668,7 +4668,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route22/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route22/map.json",
       "map_name": "Route22",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 29,
         "keep": 21,
@@ -4708,7 +4708,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route23/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route23/map.json",
       "map_name": "Route23",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 17,
         "keep": 9,
@@ -4748,7 +4748,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route24/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route24/map.json",
       "map_name": "Route24",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 15,
         "keep": 14,
@@ -4788,7 +4788,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route25_SeaCottage/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/Route25_SeaCottage/map.json",
       "map_name": "Route25_SeaCottage",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 36,
         "keep": 34,
@@ -5348,7 +5348,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SSAnne_2F_Corridor/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SSAnne_2F_Corridor/map.json",
       "map_name": "SSAnne_2F_Corridor",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 23,
         "keep": 19,
@@ -5362,7 +5362,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.226011"
+      "last_updated": "2025-09-26T16:56:20.190473"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SSAnne_2F_Room1/scripts.inc",
@@ -5988,7 +5988,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SaffronCity_Gym/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SaffronCity_Gym/map.json",
       "map_name": "SaffronCity_Gym",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 16,
         "keep": 14,
@@ -6208,7 +6208,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SeafoamIslands_B4F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SeafoamIslands_B4F/map.json",
       "map_name": "SeafoamIslands_B4F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 29,
         "keep": 28,
@@ -6408,7 +6408,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SevenIsland_SevaultCanyon_House/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SevenIsland_SevaultCanyon_House/map.json",
       "map_name": "SevenIsland_SevaultCanyon_House",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 7,
         "keep": 6,
@@ -6428,7 +6428,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SevenIsland_SevaultCanyon_TanobyKey/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SevenIsland_SevaultCanyon_TanobyKey/map.json",
       "map_name": "SevenIsland_SevaultCanyon_TanobyKey",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 14,
         "keep": 11,
@@ -6648,7 +6648,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_10F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_10F/map.json",
       "map_name": "SilphCo_10F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 7,
         "keep": 6,
@@ -6668,7 +6668,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_11F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_11F/map.json",
       "map_name": "SilphCo_11F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 20,
         "keep": 17,
@@ -6708,7 +6708,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_2F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_2F/map.json",
       "map_name": "SilphCo_2F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 8,
         "keep": 6,
@@ -6728,7 +6728,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_3F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_3F/map.json",
       "map_name": "SilphCo_3F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 7,
         "keep": 6,
@@ -6748,7 +6748,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_4F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_4F/map.json",
       "map_name": "SilphCo_4F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 8,
         "keep": 6,
@@ -6768,7 +6768,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_5F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_5F/map.json",
       "map_name": "SilphCo_5F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 12,
         "keep": 10,
@@ -6788,7 +6788,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_6F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_6F/map.json",
       "map_name": "SilphCo_6F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 16,
         "keep": 14,
@@ -6808,7 +6808,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_7F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_7F/map.json",
       "map_name": "SilphCo_7F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 34,
         "keep": 27,
@@ -6828,7 +6828,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_8F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_8F/map.json",
       "map_name": "SilphCo_8F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 8,
         "keep": 6,
@@ -6848,7 +6848,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_9F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SilphCo_9F/map.json",
       "map_name": "SilphCo_9F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 8,
         "keep": 6,
@@ -7128,7 +7128,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SixIsland_OutcastIsland/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SixIsland_OutcastIsland/map.json",
       "map_name": "SixIsland_OutcastIsland",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 2,
         "keep": 1,
@@ -7168,7 +7168,7 @@
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SixIsland_PokemonCenter_1F/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/SixIsland_PokemonCenter_1F/map.json",
       "map_name": "SixIsland_PokemonCenter_1F",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 11,
         "keep": 10,
@@ -7222,7 +7222,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.541050"
+      "last_updated": "2025-09-26T16:55:24.246607"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SixIsland_WaterPath/scripts.inc",
@@ -7242,7 +7242,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.542180"
+      "last_updated": "2025-09-26T16:55:24.252770"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SixIsland_WaterPath_House1/scripts.inc",
@@ -7262,7 +7262,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.548365"
+      "last_updated": "2025-09-26T16:55:24.258996"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/SixIsland_WaterPath_House2/scripts.inc",
@@ -7282,13 +7282,13 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.549151"
+      "last_updated": "2025-09-26T16:55:24.265188"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland/map.json",
       "map_name": "ThreeIsland",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 48,
         "keep": 46,
@@ -7302,13 +7302,13 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.579970"
+      "last_updated": "2025-09-26T16:55:24.272419"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_BerryForest/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_BerryForest/map.json",
       "map_name": "ThreeIsland_BerryForest",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 7,
         "keep": 6,
@@ -7322,7 +7322,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.584259"
+      "last_updated": "2025-09-26T16:55:24.279030"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_BondBridge/scripts.inc",
@@ -7342,7 +7342,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.585440"
+      "last_updated": "2025-09-26T16:55:24.285213"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_DunsparceTunnel/scripts.inc",
@@ -7362,7 +7362,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.589833"
+      "last_updated": "2025-09-26T16:55:24.291382"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_Harbor/scripts.inc",
@@ -7382,7 +7382,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.590705"
+      "last_updated": "2025-09-26T16:55:24.297472"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_House1/scripts.inc",
@@ -7402,7 +7402,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.591916"
+      "last_updated": "2025-09-26T16:55:24.303593"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_House2/scripts.inc",
@@ -7422,7 +7422,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.593087"
+      "last_updated": "2025-09-26T16:55:24.309666"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_House3/scripts.inc",
@@ -7442,7 +7442,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.593862"
+      "last_updated": "2025-09-26T16:55:24.315870"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_House4/scripts.inc",
@@ -7462,7 +7462,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.594998"
+      "last_updated": "2025-09-26T16:55:24.322009"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_House5/scripts.inc",
@@ -7482,7 +7482,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.596278"
+      "last_updated": "2025-09-26T16:55:24.328100"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_Mart/scripts.inc",
@@ -7502,7 +7502,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.598814"
+      "last_updated": "2025-09-26T16:55:24.334186"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_PokemonCenter_1F/scripts.inc",
@@ -7522,7 +7522,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.601307"
+      "last_updated": "2025-09-26T16:55:24.340401"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_PokemonCenter_2F/scripts.inc",
@@ -7542,7 +7542,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.603134"
+      "last_updated": "2025-09-26T16:55:24.346510"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ThreeIsland_Port/scripts.inc",
@@ -7562,7 +7562,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.606100"
+      "last_updated": "2025-09-26T16:55:24.352564"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TradeCenter/scripts.inc",
@@ -7582,7 +7582,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.606467"
+      "last_updated": "2025-09-26T16:55:24.358585"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TrainerTower_1F/scripts.inc",
@@ -7602,7 +7602,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.608949"
+      "last_updated": "2025-09-26T16:55:24.364704"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TrainerTower_2F/scripts.inc",
@@ -7622,7 +7622,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.611454"
+      "last_updated": "2025-09-26T16:55:24.370751"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TrainerTower_3F/scripts.inc",
@@ -7642,7 +7642,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.613984"
+      "last_updated": "2025-09-26T16:55:24.376803"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TrainerTower_4F/scripts.inc",
@@ -7662,7 +7662,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.616518"
+      "last_updated": "2025-09-26T16:55:24.382851"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TrainerTower_5F/scripts.inc",
@@ -7682,7 +7682,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.619121"
+      "last_updated": "2025-09-26T16:55:24.388934"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TrainerTower_6F/scripts.inc",
@@ -7702,7 +7702,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.621637"
+      "last_updated": "2025-09-26T16:55:24.395039"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TrainerTower_7F/scripts.inc",
@@ -7722,7 +7722,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.624177"
+      "last_updated": "2025-09-26T16:55:24.407815"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TrainerTower_8F/scripts.inc",
@@ -7742,7 +7742,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.626766"
+      "last_updated": "2025-09-26T16:55:24.413907"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TrainerTower_Elevator/scripts.inc",
@@ -7762,7 +7762,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.632221"
+      "last_updated": "2025-09-26T16:55:24.419992"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TrainerTower_Lobby/scripts.inc",
@@ -7782,7 +7782,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.649581"
+      "last_updated": "2025-09-26T16:55:24.426046"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TrainerTower_Roof/scripts.inc",
@@ -7802,7 +7802,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.650632"
+      "last_updated": "2025-09-26T16:55:24.432150"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TwoIsland/scripts.inc",
@@ -7822,7 +7822,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.667702"
+      "last_updated": "2025-09-26T16:55:24.438385"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TwoIsland_CapeBrink/scripts.inc",
@@ -7842,7 +7842,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.668088"
+      "last_updated": "2025-09-26T16:55:24.444508"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TwoIsland_CapeBrink_House/scripts.inc",
@@ -7862,7 +7862,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.668509"
+      "last_updated": "2025-09-26T16:55:24.450612"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TwoIsland_Harbor/scripts.inc",
@@ -7882,7 +7882,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.669370"
+      "last_updated": "2025-09-26T16:55:24.456661"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TwoIsland_House/scripts.inc",
@@ -7902,13 +7902,13 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.678648"
+      "last_updated": "2025-09-26T16:55:24.462727"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TwoIsland_JoyfulGameCorner/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/TwoIsland_JoyfulGameCorner/map.json",
       "map_name": "TwoIsland_JoyfulGameCorner",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 20,
         "keep": 19,
@@ -7922,7 +7922,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.692596"
+      "last_updated": "2025-09-26T16:55:24.469213"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TwoIsland_PokemonCenter_1F/scripts.inc",
@@ -7942,7 +7942,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.694706"
+      "last_updated": "2025-09-26T16:55:24.475379"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/TwoIsland_PokemonCenter_2F/scripts.inc",
@@ -7962,7 +7962,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.696514"
+      "last_updated": "2025-09-26T16:55:24.481430"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/UndergroundPath_EastEntrance/scripts.inc",
@@ -7982,7 +7982,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.697312"
+      "last_updated": "2025-09-26T16:55:24.487547"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/UndergroundPath_EastWestTunnel/scripts.inc",
@@ -8002,7 +8002,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.698188"
+      "last_updated": "2025-09-26T16:55:24.493670"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/UndergroundPath_NorthEntrance/scripts.inc",
@@ -8022,7 +8022,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.700898"
+      "last_updated": "2025-09-26T16:55:24.499674"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/UndergroundPath_NorthSouthTunnel/scripts.inc",
@@ -8042,7 +8042,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.701778"
+      "last_updated": "2025-09-26T16:55:24.505668"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/UndergroundPath_SouthEntrance/scripts.inc",
@@ -8062,7 +8062,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.702565"
+      "last_updated": "2025-09-26T16:55:24.511641"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/UndergroundPath_WestEntrance/scripts.inc",
@@ -8082,13 +8082,13 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.703359"
+      "last_updated": "2025-09-26T16:55:24.517661"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/UnionRoom/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/UnionRoom/map.json",
       "map_name": "UnionRoom",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 13,
         "keep": 12,
@@ -8102,13 +8102,13 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.708957"
+      "last_updated": "2025-09-26T16:55:24.523948"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VermilionCity/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/VermilionCity/map.json",
       "map_name": "VermilionCity",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 38,
         "keep": 37,
@@ -8122,13 +8122,13 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.729969"
+      "last_updated": "2025-09-26T16:55:24.530557"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VermilionCity_Gym/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/VermilionCity_Gym/map.json",
       "map_name": "VermilionCity_Gym",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 40,
         "keep": 38,
@@ -8142,7 +8142,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.753042"
+      "last_updated": "2025-09-26T16:55:24.537105"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VermilionCity_House1/scripts.inc",
@@ -8162,7 +8162,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.755693"
+      "last_updated": "2025-09-26T16:55:24.543172"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VermilionCity_House2/scripts.inc",
@@ -8182,7 +8182,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.758384"
+      "last_updated": "2025-09-26T16:55:24.549191"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VermilionCity_House3/scripts.inc",
@@ -8202,7 +8202,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.760353"
+      "last_updated": "2025-09-26T16:55:24.555227"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VermilionCity_Mart/scripts.inc",
@@ -8222,7 +8222,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.762524"
+      "last_updated": "2025-09-26T16:55:24.567818"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VermilionCity_PokemonCenter_1F/scripts.inc",
@@ -8242,7 +8242,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.765058"
+      "last_updated": "2025-09-26T16:55:24.574002"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VermilionCity_PokemonCenter_2F/scripts.inc",
@@ -8262,7 +8262,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.766896"
+      "last_updated": "2025-09-26T16:55:24.579995"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VermilionCity_PokemonFanClub/scripts.inc",
@@ -8282,7 +8282,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.775244"
+      "last_updated": "2025-09-26T16:55:24.585977"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VictoryRoad_1F/scripts.inc",
@@ -8302,7 +8302,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.779180"
+      "last_updated": "2025-09-26T16:55:24.592011"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VictoryRoad_2F/scripts.inc",
@@ -8322,7 +8322,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.786118"
+      "last_updated": "2025-09-26T16:55:24.598006"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/VictoryRoad_3F/scripts.inc",
@@ -8342,7 +8342,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.791974"
+      "last_updated": "2025-09-26T16:55:24.604119"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ViridianCity/scripts.inc",
@@ -8362,13 +8362,13 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.810583"
+      "last_updated": "2025-09-26T16:55:24.610403"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ViridianCity_Gym/scripts.inc",
       "map_json_path": "/home/runner/work/pokefirered/pokefirered/data/maps/ViridianCity_Gym/map.json",
       "map_name": "ViridianCity_Gym",
-      "status": "needs_processing",
+      "status": "completed",
       "score_stats": {
         "labels": 17,
         "keep": 15,
@@ -8382,7 +8382,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.819935"
+      "last_updated": "2025-09-26T16:55:24.616893"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ViridianCity_House/scripts.inc",
@@ -8402,7 +8402,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.821948"
+      "last_updated": "2025-09-26T16:55:24.622953"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ViridianCity_Mart/scripts.inc",
@@ -8422,7 +8422,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.827876"
+      "last_updated": "2025-09-26T16:55:24.628945"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ViridianCity_PokemonCenter_1F/scripts.inc",
@@ -8442,7 +8442,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.830392"
+      "last_updated": "2025-09-26T16:55:24.635091"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ViridianCity_PokemonCenter_2F/scripts.inc",
@@ -8462,7 +8462,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.832249"
+      "last_updated": "2025-09-26T16:55:24.641159"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ViridianCity_School/scripts.inc",
@@ -8482,7 +8482,7 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.839360"
+      "last_updated": "2025-09-26T16:55:24.647197"
     },
     {
       "path": "/home/runner/work/pokefirered/pokefirered/data/maps/ViridianForest/scripts.inc",
@@ -8502,10 +8502,10 @@
       "coord_events_pruned": 0,
       "notes": "",
       "last_edit_commit": "",
-      "last_updated": "2025-09-26T16:02:01.846084"
+      "last_updated": "2025-09-26T16:55:24.653254"
     }
   ],
-  "queue_index": 360,
+  "queue_index": 425,
   "batch_size": 25,
   "runs": [],
   "key_items": [
