@@ -1,5 +1,6 @@
 SixIsland_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SixIsland_OnTransition
+		map_script MAP_SCRIPT_ON_TRANSITION, OnTransition_Fly
 	.byte 0
 
 SixIsland_OnTransition::
@@ -16,4 +17,8 @@ SixIsland_EventScript_Boy::
 
 SixIsland_EventScript_IslandSign::
 	msgbox SixIsland_Text_IslandSign, MSGBOX_SIGN
+	end
+
+OnTransition_Fly::
+	setflag FLAG_VISITED_SIX
 	end

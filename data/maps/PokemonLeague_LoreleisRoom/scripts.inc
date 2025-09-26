@@ -74,20 +74,14 @@ PokemonLeague_LoreleisRoom_EventScript_RematchIntro::
 
 PokemonLeague_LoreleisRoom_EventScript_Battle::
 	trainerbattle_no_intro TRAINER_ELITE_FOUR_LORELEI, PokemonLeague_LoreleisRoom_Text_Defeat
-	return
-
+	end
 PokemonLeague_LoreleisRoom_EventScript_Rematch::
 	trainerbattle_no_intro TRAINER_ELITE_FOUR_LORELEI_2, PokemonLeague_LoreleisRoom_Text_Defeat
-	return
-
+	end
 PokemonLeague_LoreleisRoom_EventScript_PostBattle::
 	msgbox PokemonLeague_LoreleisRoom_Text_PostBattle
 	release
 	end
 
 PokemonLeague_LoreleisRoom_EventScript_DefeatedLorelei::
-	setflag FLAG_DEFEATED_LORELEI
-	call PokemonLeague_EventScript_OpenDoor
-	msgbox PokemonLeague_LoreleisRoom_Text_PostBattle
-	release
 	end

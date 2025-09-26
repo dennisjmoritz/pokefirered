@@ -16,26 +16,8 @@ RocketHideout_B4F_EventScript_CountGruntDefeated::
 	return
 
 RocketHideout_B4F_EventScript_Giovanni::
-	lock
-	faceplayer
-	famechecker FAMECHECKER_GIOVANNI, 0
-	message RocketHideout_B4F_Text_GiovanniIntro
-	waitmessage
-	playbgm MUS_ENCOUNTER_ROCKET, 0
-	waitbuttonpress
 	trainerbattle_no_intro TRAINER_BOSS_GIOVANNI, RocketHideout_B4F_Text_GiovanniDefeat
-	msgbox RocketHideout_B4F_Text_GiovanniPostBattle
-	fadescreen FADE_TO_BLACK
-	closemessage
-	removeobject LOCALID_HIDEOUT_GIOVANNI
-	addobject LOCALID_SILPH_SCOPE
-	clearflag FLAG_HIDE_SILPH_SCOPE
-	setflag FLAG_HIDE_CELADON_ROCKETS
-	famechecker FAMECHECKER_GIOVANNI, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	fadescreen FADE_FROM_BLACK
-	release
 	end
-
 RocketHideout_B4F_EventScript_SilphScope::
 	lock
 	faceplayer
@@ -47,10 +29,7 @@ RocketHideout_B4F_EventScript_SilphScope::
 
 RocketHideout_B4F_EventScript_Grunt1::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_18, RocketHideout_B4F_Text_Grunt1Intro, RocketHideout_B4F_Text_Grunt1Defeat, RocketHideout_B4F_EventScript_DefeatedGrunt1
-	msgbox RocketHideout_B4F_Text_Grunt1PostBattle
-	release
 	end
-
 RocketHideout_B4F_EventScript_DefeatedGrunt1::
 	msgbox RocketHideout_B4F_Text_Grunt1PostBattle
 	addobject LOCALID_LIFT_KEY
@@ -70,9 +49,7 @@ RocketHideout_B4F_EventScript_LiftKey::
 
 RocketHideout_B4F_EventScript_Grunt2::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_16, RocketHideout_B4F_Text_Grunt2Intro, RocketHideout_B4F_Text_Grunt2Defeat, RocketHideout_B4F_EventScript_DefeatedGrunt2
-	msgbox RocketHideout_B4F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	end
-
 RocketHideout_B4F_EventScript_DefeatedGrunt2::
 	setvar NUM_DOOR_GRUNTS_DEFEATED, 0
 	call_if_defeated TRAINER_TEAM_ROCKET_GRUNT_16, RocketHideout_B4F_EventScript_CountGruntDefeated
@@ -84,9 +61,7 @@ RocketHideout_B4F_EventScript_DefeatedGrunt2::
 
 RocketHideout_B4F_EventScript_Grunt3::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_17, RocketHideout_B4F_Text_Grunt3Intro, RocketHideout_B4F_Text_Grunt3Defeat, RocketHideout_B4F_EventScript_DefeatedGrunt3
-	msgbox RocketHideout_B4F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
-
 RocketHideout_B4F_EventScript_DefeatedGrunt3::
 	setvar NUM_DOOR_GRUNTS_DEFEATED, 0
 	call_if_defeated TRAINER_TEAM_ROCKET_GRUNT_16, RocketHideout_B4F_EventScript_CountGruntDefeated

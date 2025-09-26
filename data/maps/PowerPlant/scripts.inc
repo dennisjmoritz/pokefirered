@@ -33,31 +33,11 @@ PowerPlant_EventScript_ShowElectrode2::
 	return
 
 PowerPlant_EventScript_Zapdos::
-	goto_if_questlog EventScript_ReleaseEnd
-	special QuestLog_CutRecording
-	lock
-	faceplayer
 	setwildbattle SPECIES_ZAPDOS, 50
-	waitse
 	playmoncry SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER
-	message Text_Gyaoo
-	waitmessage
 	waitmoncry
-	delay 10
 	playbgm MUS_ENCOUNTER_GYM_LEADER, 0
-	waitbuttonpress
-	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	special StartLegendaryBattle
-	waitstate
-	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PowerPlant_EventScript_DefeatedZapdos
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_RanFromZapdos
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_RanFromZapdos
-	setflag FLAG_FOUGHT_ZAPDOS
-	release
 	end
-
 PowerPlant_EventScript_DefeatedZapdos::
 	setflag FLAG_FOUGHT_ZAPDOS
 	goto EventScript_RemoveStaticMon
@@ -69,52 +49,20 @@ PowerPlant_EventScript_RanFromZapdos::
 	end
 
 PowerPlant_EventScript_Electrode1::
-	goto_if_questlog EventScript_ReleaseEnd
-	lock
-	faceplayer
 	setwildbattle SPECIES_ELECTRODE, 34
-	waitse
 	playmoncry SPECIES_ELECTRODE, CRY_MODE_ENCOUNTER
-	delay 40
 	waitmoncry
-	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	dowildbattle
-	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	special QuestLog_CutRecording
-	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PowerPlant_EventScript_FoughtElectrode1
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_FoughtElectrode1
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_FoughtElectrode1
-	setflag FLAG_FOUGHT_POWER_PLANT_ELECTRODE_1
-	release
 	end
-
 PowerPlant_EventScript_FoughtElectrode1::
 	setflag FLAG_FOUGHT_POWER_PLANT_ELECTRODE_1
 	goto EventScript_RemoveStaticMon
 	end
 
 PowerPlant_EventScript_Electrode2::
-	goto_if_questlog EventScript_ReleaseEnd
-	lock
-	faceplayer
 	setwildbattle SPECIES_ELECTRODE, 34
-	waitse
 	playmoncry SPECIES_ELECTRODE, CRY_MODE_ENCOUNTER
-	delay 40
 	waitmoncry
-	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	dowildbattle
-	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	special QuestLog_CutRecording
-	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PowerPlant_EventScript_FoughtElectrode2
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_FoughtElectrode2
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_FoughtElectrode2
-	setflag FLAG_FOUGHT_POWER_PLANT_ELECTRODE_2
-	release
 	end
-
 PowerPlant_EventScript_FoughtElectrode2::
 	setflag FLAG_FOUGHT_POWER_PLANT_ELECTRODE_2
 	goto EventScript_RemoveStaticMon
